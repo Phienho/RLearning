@@ -1,0 +1,41 @@
+Notes for set up a github accoutn on Mac
+-----------------------------------------
+  451  git
+  452  git help
+  453  git -global user.name "PhienHo"
+  454  git --global user.name "PhienHo"
+  455  git config -global user.name "PhienHo"
+  456  git config --global user.name "PhienHo"
+  457  git config --global user.email "phiendaily@gmail.com"
+  458  ls -trl
+  459  git config --list
+  460  git fetch
+  461  sudo git fetch
+  462  ls -al ~/.ssh
+  463  ssh-keyagent -t rsa -b 4096 -C "phiendaily@gmail.com"
+  464  sudo touch /var/db/useLS
+  465  ssh-keyagent -t rsa -b 4096 -C "phiendaily@gmail.com"
+  466  ssh-keygent -t rsa -b 4096 -C "phiendaily@gmail.com"
+  467  ssh-keygen -t rsa -b 4096 -C "phiendaily@gmail.com"
+  468  ls -la ~/.ssh
+  469  eval "$(ssh-agent -s)"
+  470  ssh-add ~/.ssh/id_rsa
+  471  ls -la ~/.ssh
+  472  pbcopy < ~/.ssh/id_rsa.pub 
+  473  ssh -T git@github.com
+______________________________________________
+# Clone a repository
+git clone https://github.com:Phienho/RLearning
+# Upload changes
+git add *
+git commit -m "Message"
+git push origin master
+# Update from git to local
+git pull
+
+#
+------------------------------------------------
+# Set up a remote url
+git remote set-url origin https:Phienho@github.com/Phienho/RLearning.git
+#
+
