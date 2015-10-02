@@ -37,5 +37,17 @@ git pull
 ------------------------------------------------
 # Set up a remote url
 git remote set-url origin https:Phienho@github.com/Phienho/RLearning.git
-#
+# check the config file whether it has the following form
+
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        fetch = +refs/heads/*:refs/remotes/origin/*
+        url = https://Phienho@github.com/Phienho/RLearning.git
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
 
